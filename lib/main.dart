@@ -9,3 +9,4 @@ void main() {
     ),
   );
 }
+//Ponto de integração para receber o Snackbar
