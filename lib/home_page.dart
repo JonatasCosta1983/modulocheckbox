@@ -11,6 +11,17 @@ class _HomePageState extends State<HomePage> {
   bool _primeiroDiaLido = false;
   bool _segundoDiaLido = false;
 
+  _todoslidos() {
+    if (_primeiroDiaLido && _segundoDiaLido == true) {
+      setState(() {
+        const snackBar = SnackBar(
+          content: Text('Parabéns você leu sete capitulos!'),
+        );
+        ScaffoldMessenger.of(context).showSnackBar(snackBar);
+      });
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -61,6 +72,7 @@ class _HomePageState extends State<HomePage> {
             onChanged: (bool? dia2) {
               setState(() {
                 _segundoDiaLido = dia2!;
+                _todoslidos();
               });
             },
           )
