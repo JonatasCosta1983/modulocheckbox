@@ -15,24 +15,18 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Plano de Leitura anual'),
+        title: const Text('Estudo Checkbox'),
       ),
       body: Column(
         children: [
           CheckboxListTile(
             title: const Text(
-              'Dia | Livro | Capitulo',
-              style: TextStyle(
-                fontSize: 20.00,
-                color: Colors.grey,
-              ),
+              'Texto1 | Texto2 | Texto03',
+              style: TextStyle(fontSize: 20.00, color: Colors.grey),
             ),
             subtitle: const Text(
-              '1 | Mateus| 1-4',
-              style: TextStyle(
-                fontSize: 15.00,
-                color: Colors.grey,
-              ),
+              '1 | 1-1 | 1-4',
+              style: TextStyle(fontSize: 15.00, color: Colors.grey),
             ),
             activeColor: Colors.black,
             checkColor: Colors.white,
@@ -44,8 +38,16 @@ class _HomePageState extends State<HomePage> {
             },
           ),
           CheckboxListTile(
-            title: const Text('Dia | Livro | Capitulo'),
-            subtitle: const Text('2 | Matheus | 5-7 '),
+            title: const Text(
+              'Texto1 | Texto2 | Texto03',
+              style: TextStyle(fontSize: 20.0, color: Colors.grey),
+            ),
+            subtitle: const Text(
+              '2 | 2-1 | 5-7',
+              style: TextStyle(fontSize: 15.00, color: Colors.grey),
+            ),
+            activeColor: Colors.black,
+            checkColor: Colors.white,
             value: _segundoDiaLido,
             onChanged: (bool? dia2) {
               setState(() {
