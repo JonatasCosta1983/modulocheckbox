@@ -15,18 +15,22 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Estudo Checkbox'),
+        title: const Text('Plano de leitura Anual'),
       ),
       body: Column(
         children: [
           CheckboxListTile(
-            title: const Text(
-              'Texto1 | Texto2 | Texto03',
-              style: TextStyle(fontSize: 20.00, color: Colors.grey),
+            title: Text(
+              'Dia | Livro | Capitulo',
+              style: TextStyle(
+                  color: _primeiroDiaLido ? Colors.black : Colors.grey,
+                  fontSize: 20.00),
             ),
-            subtitle: const Text(
-              '1 | 1-1 | 1-4',
-              style: TextStyle(fontSize: 15.00, color: Colors.grey),
+            subtitle: Text(
+              '1 | Mateus | 1-4',
+              style: TextStyle(
+                  color: _primeiroDiaLido ? Colors.black : Colors.grey,
+                  fontSize: 20.00),
             ),
             activeColor: Colors.black,
             checkColor: Colors.white,
@@ -38,13 +42,18 @@ class _HomePageState extends State<HomePage> {
             },
           ),
           CheckboxListTile(
-            title: const Text(
-              'Texto1 | Texto2 | Texto03',
-              style: TextStyle(fontSize: 20.0, color: Colors.grey),
+            title: Text(
+              'Dia | Livro | Capitulo',
+              style: TextStyle(
+                  color: _segundoDiaLido ? Colors.black : Colors.grey,
+                  fontSize: 20.0),
             ),
-            subtitle: const Text(
-              '2 | 2-1 | 5-7',
-              style: TextStyle(fontSize: 15.00, color: Colors.grey),
+            subtitle: Text(
+              '2 | Mateus | 5-7',
+              style: TextStyle(
+                color: _segundoDiaLido ? Colors.black : Colors.grey,
+                fontSize: 20.00,
+              ),
             ),
             activeColor: Colors.black,
             checkColor: Colors.white,
