@@ -15,7 +15,10 @@ class _HomePageState extends State<HomePage> {
     if (_primeiroDiaLido && _segundoDiaLido == true) {
       setState(() {
         const snackBar = SnackBar(
-          content: Text('Parabéns você leu sete capitulos!'),
+          content: Text(
+            '      Parabéns você leu sete capitulos!',
+            style: TextStyle(fontSize: 20.00),
+          ),
         );
         ScaffoldMessenger.of(context).showSnackBar(snackBar);
       });
@@ -49,6 +52,7 @@ class _HomePageState extends State<HomePage> {
             onChanged: (bool? dia1) {
               setState(() {
                 _primeiroDiaLido = dia1!;
+                _todoslidos();
               });
             },
           ),
