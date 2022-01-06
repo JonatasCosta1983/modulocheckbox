@@ -10,3 +10,4 @@ void main() {
   );
 }
 //Ponto de integração para receber o Snackbar
+//Ponto de integração ṕara iniciar a percistência no App
