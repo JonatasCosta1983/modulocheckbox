@@ -1,4 +1,4 @@
-#Wed Jan 05 21:09:55 BRT 2022
+#Sun Jan 09 14:17:20 BRT 2022
 base.0=/home/experiment/LaboratorioProgramacao/MyStudy/modulocheckbox/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
 renamed.0=classes.dex
 path.0=classes.dex
